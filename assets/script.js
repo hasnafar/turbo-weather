@@ -119,15 +119,15 @@ function displayWeather(cityName) {
     function renderSearchesEl() {
         historySearch.innerHTML = "";
         for (let i = 0; i < searchesEl.length; i++) {
-            const historySearch = document.createElement("input");
-            historySearch.setAttribute("type", "text") ;
-            historySearch.setAttribute("readonly", true);
-            historySearch.setAttribute("class", "form-control d-block btn bg-secondary");
-            historySearch.setAttribute("value", searchesEl[i]);
-            historySearch.addEventListener("click", function () {
-                displayWeather(historySearch.value);
+            const historySearchItem = document.createElement("input");
+            historySearchItem.setAttribute("type", "text") ;
+            historySearchItem.setAttribute("readonly", true);
+            historySearchItem.setAttribute("class", "form-control d-block btn bg-secondary");
+            historySearchItem.setAttribute("value", searchesEl[i]);
+            historySearchItem.addEventListener("click", function () {
+                displayWeather(historySearchItem.value);
             })
-            historySearch.append(historySearch);
+            historySearch.append(historySearchItem);
         }
     }
 
