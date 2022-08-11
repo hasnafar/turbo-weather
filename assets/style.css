@@ -1,0 +1,30 @@
+header{
+    background-image: linear-gradient(to right, teal , indigo);
+    color: white;
+    text-align: center;
+    padding: 2px
+}
+
+h3 {
+font-weight: bold;
+margin-top: 4px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+#search-button {
+    margin-bottom: 10px;
+
+}
+
+#clear-history {
+    margin-bottom: 10px;
+
+}
+.forecast {
+    background-color: rgb(45, 37, 71);
+    color: white;
+    margin: 10px;
+}
